@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+- Keep storefront styling in semantic global design tokens and use the shared Button for controls, so the luxury theme remains consistent.
+- Guest shopping uses server-issued HttpOnly capability cookies and hashed session secrets; private carts and demo orders are never exposed through public database policies.
+- Catalog prices and checkout totals are validated server-side; demo orders are explicitly marked as simulations and never represent real payments or fulfillment.
